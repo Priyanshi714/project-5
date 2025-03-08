@@ -1,0 +1,112 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #071556, #78d5ea);
+    transition: background 0.5s ease-in-out;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* Weather Card */
+.weather-card {
+    background: rgba(252, 251, 251, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.weather-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(53, 18, 118, 0.2);
+}
+
+/* Input */
+#city-input {
+    padding: 12px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #0b2b45;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#city-input:focus {
+    outline: none;
+    border-color: #1a418a;
+}
+
+/* Button */
+#city-input-btn {
+    padding: 12px 20px;
+    margin: 10px 0;
+    background: linear-gradient(90deg, #255277, #6dd5ed);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#city-input-btn:hover {
+    background: linear-gradient(90deg, #1e88e5, #5bc0de);
+}
+
+/* Weather Info */
+#weather-info {
+    display: none;
+    margin-top: 20px;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#temperature {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 8px 0;
+    color: #333;
+}
+
+#description {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #555;
+}
+
+#wind-speed, #date {
+    font-size: 16px;
+    color: #b52930;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .weather-card {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #city-input {
+        width: 90%;
+    }
+
+    #city-input-btn {
+        width: 90%;
+    }
+}
